@@ -2,8 +2,20 @@
 @import './base/reset';
 
 @import './base/common';
+@import './utils/hidden';
 
 @import './components/container';
 
-@import './layouts/header';
-@import './layouts/hero';
+@import './layouts/studio/header';
+@import './layouts/studio/hero';
+@import './components/button';
+@import './components/section';
+@import './layouts/studio/features';
+@import './layouts/studio/work';
+@import './layouts/studio/team';
+@import './layouts/studio/clients';
+@import './layouts/studio/footer';
+
+@import './layouts/portfolio/main-button';
+@import './layouts/portfolio/gallery';
+@import './components/backdrop';

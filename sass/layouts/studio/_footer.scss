@@ -1,0 +1,107 @@
+.aside {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: var(--primary-background-color);
+  color: var(--primary-white-color);
+}
+
+.logo-down {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  color: var(--primary-white-color);
+}
+
+.aside-contact {
+  margin-top: 20px;
+  font-size: 14px;
+  line-height: 1.71;
+  font-style: normal;
+}
+
+.aside > .container {
+  display: flex;
+  align-items: baseline;
+}
+
+.aside-soc {
+  margin-left: 70px;
+}
+.aside-par {
+  margin-bottom: 20px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.aside-subscription {
+  margin-left: auto;
+}
+.aside-form {
+  display: flex;
+}
+
+.aside-form-mail {
+  width: 358px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: transparent;
+  padding-left: 16px;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.aside-subscription .hero-button {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+  border: 0px;
+}
+
+.aside-subscription .hero-button::after {
+  justify-content: center;
+  content: '';
+  width: 24px;
+  height: 24px;
+  margin-left: 11px;
+
+  background-image: url('../images/icon-send.svg');
+  background-size: contain;
+}
+
+.aside .team-social-link {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: var(--primary-white-color);
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.team-social-icon {
+  fill: currentColor;
+}
+
+.team-social-link:hover,
+.team-social-link:focus {
+  background-color: var(--accent-color);
+}
+
+.contact-down .link {
+  color: var(--third-text-color);
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.contact-down .link:hover,
+.contact-down .link:focus {
+  color: var(--accent-color);
+}
+.contact-down.list {
+  margin-top: 9px;
+}
+.contact-down > .item:first-child {
+  margin-bottom: 9px;
+}
