@@ -3,6 +3,10 @@
   padding-bottom: 60px;
   background-color: var(--primary-background-color);
   color: var(--primary-white-color);
+  .container {
+    display: flex;
+    align-items: baseline;
+  }
 }
 
 .logo-down {
@@ -20,11 +24,6 @@
   font-style: normal;
 }
 
-.aside > .container {
-  display: flex;
-  align-items: baseline;
-}
-
 .aside-soc {
   margin-left: 70px;
 }
@@ -39,7 +38,24 @@
 
 .aside-subscription {
   margin-left: auto;
+  .hero-button {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    border: 0px;
+  }
+  .hero-button::after {
+    justify-content: center;
+    content: '';
+    width: 24px;
+    height: 24px;
+    margin-left: 11px;
+
+    background-image: url('../images/icon-send.svg');
+    background-size: contain;
+  }
 }
+
 .aside-form {
   display: flex;
 }
@@ -55,25 +71,7 @@
   color: rgba(255, 255, 255, 0.6);
 }
 
-.aside-subscription .hero-button {
-  display: flex;
-  align-items: center;
-  margin-left: 10px;
-  border: 0px;
-}
-
-.aside-subscription .hero-button::after {
-  justify-content: center;
-  content: '';
-  width: 24px;
-  height: 24px;
-  margin-left: 11px;
-
-  background-image: url('../images/icon-send.svg');
-  background-size: contain;
-}
-
-.aside .team-social-link {
+.aside-subscription .aside-subscription .aside .team-social-link {
   background-color: rgba(255, 255, 255, 0.1);
   color: var(--primary-white-color);
   transition-property: background-color;
