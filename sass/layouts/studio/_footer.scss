@@ -7,6 +7,13 @@
     display: flex;
     align-items: baseline;
   }
+  .team-social-link {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: var(--primary-white-color);
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
 
 .logo-down {
@@ -55,7 +62,6 @@
     background-size: contain;
   }
 }
-
 .aside-form {
   display: flex;
 }
@@ -71,13 +77,6 @@
   color: rgba(255, 255, 255, 0.6);
 }
 
-.aside-subscription .aside-subscription .aside .team-social-link {
-  background-color: rgba(255, 255, 255, 0.1);
-  color: var(--primary-white-color);
-  transition-property: background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 .team-social-icon {
   fill: currentColor;
 }
