@@ -150,7 +150,7 @@ body {
   margin-left: 50px;
 }
 
-.contact-up .link {
+.contact-up__link {
   display: flex;
   font-weight: 500;
   font-size: 14px;
@@ -163,12 +163,12 @@ body {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.contact-up .link:hover,
-.contact-up .link:focus {
+.contact-up__link:hover,
+.contact-up__link:focus {
   color: var(--accent-color);
 }
 
-.contact-up-icon {
+.contact-up__icon {
   margin-right: 10px;
   fill: currentColor;
 }
@@ -427,14 +427,6 @@ body {
   transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.logo-down {
-  font-family: "Raleway", sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  color: var(--primary-white-color);
 }
 
 .aside-contact {

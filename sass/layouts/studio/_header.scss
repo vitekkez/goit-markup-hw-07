@@ -13,20 +13,6 @@
   .item + .item {
     margin-left: 50px;
   }
-  // .link {
-  //   display: block;
-  //   padding-top: 32px;
-  //   padding-bottom: 28px;
-
-  //   color: var(--secondery-text-color);
-  //   font-weight: 500;
-  //   font-size: 14px;
-  //   line-height: 1.14;
-  //   letter-spacing: 0.02em;
-  //   transition-property: color;
-  //   transition-duration: 250ms;
-  //   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  // }
 }
 
 .navigation-site__link {
@@ -75,7 +61,7 @@
   }
 }
 
-.contact-up .link {
+.contact-up__link {
   display: flex;
   font-weight: 500;
   font-size: 14px;
@@ -88,12 +74,12 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.contact-up .link:hover,
-.contact-up .link:focus {
+.contact-up__link:hover,
+.contact-up__link:focus {
   color: var(--accent-color);
 }
 
-.contact-up-icon {
+.contact-up__icon {
   margin-right: 10px;
   fill: currentColor;
 }
