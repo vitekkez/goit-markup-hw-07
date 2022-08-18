@@ -1,4 +1,13 @@
-.basic-button {
+.menu {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+  .item + .item {
+    margin-left: 8px;
+  }
+}
+
+.menu__button {
   border: 1px solid transparent;
   border-radius: 4px;
   padding: 6px 22px;
@@ -16,19 +25,10 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.basic-button:hover,
-.basic-button:focus {
+.menu__button:hover,
+.menu__button:focus {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
-}
-
-.section-button {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
-  .item + .item {
-    margin-left: 8px;
-  }
 }
