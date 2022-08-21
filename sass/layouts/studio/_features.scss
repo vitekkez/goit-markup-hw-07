@@ -7,23 +7,36 @@
 .feature-list__item {
   min-width: 270px;
   flex-basis: calc(100% / 4 - 30px);
+  &::before {
+    display: block;
+    content: '';
+    height: 120px;
+    margin-bottom: 30px;
+    background-size: 70px;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    background-color: var(--accent-button-color);
+    border-radius: 4px;
+  }
+  &:nth-child(1)::before {
+    background-image: url(../images/sat.svg);
+  }
+  &:nth-child(2)::before {
+    background-image: url(../images/time.svg);
+  }
+
+  &:nth-child(3)::before {
+    background-image: url(../images/diagram3.svg);
+  }
+
+  &:nth-child(4)::before {
+    background-image: url(../images/astronaut4.svg);
+  }
 }
 
 .feature-list__item + .feature-list__item {
   margin-left: 30px;
-}
-
-.feature-list__item::before {
-  display: block;
-  content: '';
-  height: 120px;
-  margin-bottom: 30px;
-  background-size: 70px;
-  background-repeat: no-repeat;
-  background-position: center;
-
-  background-color: var(--accent-button-color);
-  border-radius: 4px;
 }
 
 .feature-list__title {
@@ -32,20 +45,4 @@
   line-height: 1.14;
   text-transform: uppercase;
   color: var(--secondery-text-color);
-}
-
-.feature-list__item:nth-child(1)::before {
-  background-image: url(../images/sat.svg);
-}
-
-.feature-list__item:nth-child(2)::before {
-  background-image: url(../images/time.svg);
-}
-
-.feature-list__item:nth-child(3)::before {
-  background-image: url(../images/diagram3.svg);
-}
-
-.feature-list__item:nth-child(4)::before {
-  background-image: url(../images/astronaut4.svg);
 }

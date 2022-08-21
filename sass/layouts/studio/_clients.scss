@@ -17,14 +17,12 @@
   transition-property: border, color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.clients-link > .link-icon {
-  fill: currentColor;
-}
-
-.clients-link:hover,
-.clients-link:focus {
-  color: #2196f3;
-  border: 1px solid var(--accent-color);
+  > .link-icon {
+    fill: currentColor;
+  }
+  &:hover,
+  &:focus {
+    color: #2196f3;
+    border: 1px solid var(--accent-color);
+  }
 }
